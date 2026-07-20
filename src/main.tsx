@@ -1,0 +1,9 @@
+// 作成日: 2026-07-18 / 作成担当: Codex
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./GenericApp";
+import "./styles.css";
+import "./generic.css";
+
+ReactDOM.createRoot(document.getElementById("root")!).render(<React.StrictMode><App /></React.StrictMode>);
+if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => undefined));
