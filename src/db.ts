@@ -1,5 +1,6 @@
 // 作成日: 2026-07-18 / 作成担当: Codex
 // 最終更新日: 2026-07-21 (Codex) — 汎用版の保存設定。
+// 重要: db名・table名・既存フィールドを変える時は、必ず保存データ移行を行う。詳細は docs/保存データを守るための開発メモ.md。
 import Dexie, { type Table } from "dexie";
 
 export type LifeEntry = {
