@@ -1,5 +1,5 @@
 // 作成日: 2026-07-18 / 作成担当: Codex
-const CACHE = "kurashi-tsuin-memo-v1";
+const CACHE = "kurashi-tsuin-memo-v3";
 const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg"];
 self.addEventListener("install", (event) => event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(SHELL))));
 self.addEventListener("activate", (event) => event.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((key) => key !== CACHE).map((key) => caches.delete(key))))));

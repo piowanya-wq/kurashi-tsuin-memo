@@ -1,7 +1,7 @@
 // 作成日: 2026-07-18 / 作成担当: Codex
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./GenericAppV2";
+import App from "./GenericAppV3";
 import "./styles.css";
 import "./generic.css";
 

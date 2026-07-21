@@ -23,8 +23,8 @@ export type AppSettings = {
   visibleSections?: Record<string, boolean>;
   clinicDays?: number | "all";
   clinicFields?: Record<string, boolean>;
-  medicineItems?: string[];
   customItems?: string[];
+  theme?: "night" | "paper" | "forest" | "rose";
   backupAt?: string;
 };
 
@@ -38,9 +38,7 @@ class KurashiTsuinDatabase extends Dexie {
 }
 
 export const db = new KurashiTsuinDatabase();
-export const extras = [
-  ["outing", "外出したこと"], ["work", "仕事"], ["bath", "入浴"], ["ai", "AI開発"], ["lateSnack", "夜食"], ["condition", "体調不良だった"],
-] as const;
+export const extras = [["outing", "外出したこと"], ["work", "仕事"], ["bath", "入浴"], ["condition", "体調不良だった"]] as const;
 
 export function blankEntry(date: string): LifeEntry {
   const now = new Date().toISOString();
