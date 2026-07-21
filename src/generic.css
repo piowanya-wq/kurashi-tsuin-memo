@@ -12,3 +12,4 @@
 
 /* 生成りテーマでは、夜色用の淡いトップ文字を紙面に合わせて読みやすくする。 */
 .theme-paper .home{color:#51473c}.theme-paper .home .eyebrow{color:#806956}.theme-paper .home .intro{color:#62584d}.theme-paper .homeLinks{border-top-color:#bda98b}.theme-paper .homeLinks button{border-bottom-color:#bda98b;color:#51473c}.theme-paper .homeLinks span{color:#806956}
+.theme-paper header{color:#51473c}.theme-paper .brand{color:#51473c}.theme-paper .brand small{color:#746b61}.theme-paper .quietButton{color:#51473c;border-color:#a99375}.theme-paper .quietButton:hover{background:#e4d8c2}
