@@ -39,7 +39,7 @@ class KurashiTsuinDatabase extends Dexie {
 }
 
 export const db = new KurashiTsuinDatabase();
-export const extras = [["outing", "🌤️ お出かけした"], ["work", "💼 仕事"], ["bath", "💧 入浴"], ["exercise", "🏃 運動"], ["condition", "🤧 体調不良"]] as const;
+export const extras = [["outing", "🌤️ お出かけした"], ["work", "💼 仕事"], ["bath", "💧 入浴"], ["exercise", "🏃‍♀️ 運動"], ["condition", "🤧 体調不良"]] as const;
 
 export function blankEntry(date: string): LifeEntry {
   const now = new Date().toISOString();
