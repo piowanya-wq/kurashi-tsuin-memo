@@ -15,6 +15,8 @@ export type LifeEntry = {
   note: string;
   // 困りごとのメモ: 通院などで伝えたい事実を、端末内に残す欄。
   troubleNote?: string;
+  /** 診察で受けた説明・次回までの指示。 */
+  hospitalNote?: string;
   createdAt: string;
   updatedAt: string;
 };
@@ -44,5 +46,5 @@ export const extras = [["outing", "🌤️ お出かけした"], ["work", "💼 
 
 export function blankEntry(date: string): LifeEntry {
   const now = new Date().toISOString();
-  return { date, bedtimePrev: "", wakeTime: "", meals: { breakfast: false, lunch: false, dinner: false, lateSnack: false }, medicine: false, medicines: {}, activities: {}, note: "", troubleNote: "", createdAt: now, updatedAt: now };
+  return { date, bedtimePrev: "", wakeTime: "", meals: { breakfast: false, lunch: false, dinner: false, lateSnack: false }, medicine: false, medicines: {}, activities: {}, note: "", troubleNote: "", hospitalNote: "", createdAt: now, updatedAt: now };
 }
